@@ -1,0 +1,45 @@
+.c-modal {
+  // display: none;
+  --c-modal-backdrop-color: rgba(0, 0, 0, 0.5);
+  --c-modal-backdrop-z-index: 10;
+  --c-modal-z-index: 11;
+
+  &__backdrop {
+    position: fixed;
+    background: var(--c-modal-backdrop-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: var(--c-modal-backdrop-z-index);
+    will-change: opacity;
+  }
+
+  &__scroller {
+    z-index: var(--c-modal-z-index);
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__wrapper {
+    padding: 10px;
+    min-height: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__container {
+    position: relative;
+    max-width: 100%;
+  }
+}

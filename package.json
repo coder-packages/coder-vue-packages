@@ -1,0 +1,22 @@
+{
+  "name": "coder-vue-components",
+  "version": "1.0.0",
+  "description": "Vue Components",
+  "main": "./dist/coder-vue-components.common.js",
+  "author": "Alexander Manukian <alikmanukian@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name coder-vue-components ./src/index.js"
+  },
+  "dependencies": {
+    "@vue/cli-service": "^4.2.3",
+    "fibers": "^4.0.2",
+    "node-sass": "^4.13.1",
+    "sass": "^1.26.2",
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
